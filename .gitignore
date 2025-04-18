@@ -6,4 +6,4 @@ logs/
 *.ipynb_checkpoints
 
 # Optionally, ignore all notebooks (if you don’t want to track .ipynb files at all)
-# *.ipynb
+*.ipynb
