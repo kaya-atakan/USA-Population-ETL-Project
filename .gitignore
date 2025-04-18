@@ -1,2 +1,9 @@
 us-population-project-venv/
 logs/
+
+# Ignore Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Optionally, ignore all notebooks (if you don’t want to track .ipynb files at all)
+# *.ipynb
