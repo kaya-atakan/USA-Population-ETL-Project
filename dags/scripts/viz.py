@@ -5,10 +5,7 @@ from matplotlib.ticker import FuncFormatter
 import os
 
 DATA_DIR = '/opt/airflow/dags/data'
-
 output_path = f"{DATA_DIR}/population_trend.png"
-if os.path.exists(output_path):
-    os.remove(output_path)
 
 
 def visualize():
