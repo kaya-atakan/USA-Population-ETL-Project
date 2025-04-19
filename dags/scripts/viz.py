@@ -2,18 +2,14 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
-
 import os
-DATA_DIR = '/opt/airflow/dags/data'
 
+DATA_DIR = '/opt/airflow/dags/data'
 
 output_path = f"{DATA_DIR}/population_trend.png"
 if os.path.exists(output_path):
     os.remove(output_path)
 
-
-
-DATA_DIR = '/opt/airflow/dags/data'
 
 def visualize():
     df = pd.read_csv(f'{DATA_DIR}/clean_data.csv')
