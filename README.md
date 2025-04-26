@@ -82,13 +82,13 @@ The DAG runs daily without backfilling old runs (catchup=False).
 `Matplotlib`
 
 ### ⚡ Troubleshooting
-Permission Errors
+Permission Errors <br>
 Make sure `/dags/data/` folder has writable permissions inside the Docker container.
 
-Dependencies Not Found
+Dependencies Not Found<br>
 Double-check your requirements.txt includes `pandas`, `requests`, `seaborn`, and `matplotlib`.
 
-Stuck in Queued State
+Stuck in Queued State<br>
 Run docker compose restart airflow to restart services after major changes.
 
 ### 📋 To-Do / Future Improvements
