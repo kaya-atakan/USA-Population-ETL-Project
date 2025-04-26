@@ -18,33 +18,35 @@ It fetches **US population data** from a public API, processes it, and generates
 ## 🚀 Getting Started
 
 
-1. Set Up the Environment
-
+### 1. Set Up the Environment
+```bash
 git clone https://github.com/your-username/us-population-project.git
 cd us-population-project
-
+```
 Make sure you have Docker and Docker Compose installed.
 
 Check installation:
-
+```bash
 docker --version
 docker compose version
-
-2. Build and Start the Services
+```
+### 2. Build and Start the Services
+```bash
 
 sudo docker compose up --build
+```
 
 This command will:
 
-Build the Airflow image
+- Build the Airflow image
 
-Start the webserver, scheduler, and other Airflow components
+- Start the webserver, scheduler, and other Airflow components
 
-3. Access Airflow UI
+### 3. Access Airflow UI
 
 http://127.0.0.1:8080/
 
-📈 How the Pipeline Works
+### 📈 How the Pipeline Works
 Extract Task
 Fetches population data from the API and saves it to /dags/data/raw_data.csv.
 
@@ -57,31 +59,31 @@ Creates a bar plot of US population over time and saves it as /dags/data/populat
 The DAG runs daily without backfilling old runs (catchup=False).
 
 
-🛠 Technologies Used
+### 🛠 Technologies Used
 
-Apache Airflow
+`Apache Airflow`
 
-Docker
+`Docker`
 
-Python 3.10
+`Python 3.10`
 
-Pandas
+`Pandas`
 
-Seaborn
+`Seaborn`
 
-Matplotlib
+`Matplotlib`
 
-⚡ Troubleshooting
+### ⚡ Troubleshooting
 Permission Errors
-Make sure /dags/data/ folder has writable permissions inside the Docker container.
+Make sure `/dags/data/` folder has writable permissions inside the Docker container.
 
 Dependencies Not Found
-Double-check your requirements.txt includes pandas, requests, seaborn, and matplotlib.
+Double-check your requirements.txt includes `pandas`, `requests`, `seaborn`, and `matplotlib`.
 
 Stuck in Queued State
 Run docker compose restart airflow to restart services after major changes.
 
-📋 To-Do / Future Improvements
+### 📋 To-Do / Future Improvements
 
 Store processed data in a database (PostgreSQL, etc.)
 
