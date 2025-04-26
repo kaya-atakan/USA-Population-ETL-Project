@@ -93,8 +93,8 @@ Run ```docker compose restart airflow``` to restart services after major changes
 
 ### 📋 To-Do / Future Improvements
 
-Store processed data in a database (PostgreSQL, etc.)
+- Store processed data in a database (PostgreSQL, etc.)
 
-Add alerting for failed DAG runs
+- Add alerting for failed DAG runs
 
-Improve visualization (e.g., dynamic labeling, interactivity)
+- Improve visualization (e.g., dynamic labeling, interactivity)
