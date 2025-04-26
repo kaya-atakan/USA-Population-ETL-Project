@@ -46,14 +46,17 @@ This command will:
 
 http://127.0.0.1:8080/
 
+---
+
+
 ### 📈 How the Pipeline Works
-Extract Task
+**Extract Task**  
 Fetches population data from the API and saves it to /dags/data/raw_data.csv.
 
-Transform Task
+**Transform Task**
 Cleans and processes the raw data, saves it as /dags/data/clean_data.csv.
 
-Visualize Task
+**Visualize Task**
 Creates a bar plot of US population over time and saves it as /dags/data/population_trend.png.
 
 The DAG runs daily without backfilling old runs (catchup=False).
